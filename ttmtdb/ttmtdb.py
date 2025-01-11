@@ -8,7 +8,7 @@ Created on Mon Dec 30 22:38:36 2024
 
 import numpy as np
 from .ttmtdbdata import data as dt
-from inpop.cnumba import cnjit
+from .cnumba import cnjit
 
 @cnjit(signature_or_function = 'f8(f8, f8, UniTuple(float64[:, :], 4))')
 def TTmTDB_calc(tt_jd, tt_jd2, data=dt):
