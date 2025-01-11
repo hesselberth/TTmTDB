@@ -11,7 +11,7 @@ from .ttmtdbdata import data as dt
 from inpop.cnumba import cnjit
 
 @cnjit(signature_or_function = 'f8(f8, f8, UniTuple(float64[:, :], 4))')
-def TTmTDB_calc1(tt_jd, tt_jd2, data=dt):
+def TTmTDB_calc(tt_jd, tt_jd2, data=dt):
     """
     Time difference between TT and TDB calculated from a series evaluation.
     
@@ -36,5 +36,5 @@ def TTmTDB_calc1(tt_jd, tt_jd2, data=dt):
         result += np.sum(terms)
     return -1e-6*result
 
-def TTmTDB_calc(tt1, tt2=0):
-    return TTmTDB_calc1(tt1, tt2, dt)
+def TTmTDB(tt1, tt2=0):
+    return TTmTDB_calc(tt1, tt2, dt)
