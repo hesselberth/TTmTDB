@@ -1,3 +1,9 @@
+"""
+Created on Mon Dec 30 22:38:36 2024
+
+@author: Marcel Hesselberth
+"""
+
 from numpy import array
 
 data = (array([[ 1.00000000000000e+00,  2.00000000000000e+00,  3.00000000000000e+00,
