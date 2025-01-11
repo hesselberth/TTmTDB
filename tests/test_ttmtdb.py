@@ -40,7 +40,3 @@ def test_inpop():
     for i in range(-36500, 36500):
         assert( abs(ip.TTmTDB(np.array([JD2000, 1])) - TTmTDB(JD2000, 1)) < 2e-7 )
 
-
-from  ttmtdb import TTmTDB
-dt1 = TTmTDB(JD2000, 1/12)
-print(dt1)
