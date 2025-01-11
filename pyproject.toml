@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "TTmTDB"
+version = "0.0.1"
+authors = [
+  { name="Marcel Hesselberth", email="hessel@physics.leidenuniv.nl" },
+]
+description = "Time difference between the TT and TDB time scales with a precision better han 200ns over 2 centuries."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Mathematics"
+]
+keywords = ["astronomy", "astrometry", "physics", "mathematics", "celestial navigation"]
+dependencies = [
+  "numpy>1.21",
+  "numba>0.56",
+]
+[project.urls]
+Homepage = "https://github.com/hesselberth/TTmTDB"
+Issues = "https://github.com/hesselberth/TTmTDB/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ttmtdb"]
