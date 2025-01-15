@@ -6,7 +6,7 @@ TTmTDB returns the difference between the TT time scale (terrestrial time, prope
 
 TTmTDB tests against INPOP21 with an error of 200ns over 2 centuries (it is in fact used for unit testing). TTmTDB uses 127 periodic terms given by Fairhead & Bretagnon 
 
-For the past and next centuries TTmTDB has a maximum value of about 2 ms.
+For the past and next centuries TTmTDB has a maximum value of less than 2 ms.
 
 #### REQUIREMENTS
 TTmTDB depends on Numpy. Numba is not required but will result in a significant speedup.
