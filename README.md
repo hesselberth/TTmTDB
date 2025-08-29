@@ -4,7 +4,7 @@ TTmTDB - Difference between the TT and TDB time scale in seconds.
 ### SYNOPSIS
 TTmTDB returns the difference between the TT time scale (terrestrial time, proper time on the earth's geoid at sea level) and the TDB time scale (barycentric dynamical time, taking into account time dilatation in the solar system). Other time scales are connected to TT and TDB via simple scalings but TT-TDB depends on the position of the bodies in the solar system and must be evaluated by ephemeris theories.
 
-TTmTDB tests against INPOP21 with an error of 200ns over 2 centuries (it is in fact used for Inpop unit testing). TTmTDB uses 127 periodic terms given by Fairhead & Bretagnon 
+TTmTDB tests against INPOP21 with an error of 200ns over 2 centuries (it is in fact used for Inpop unit testing). TTmTDB uses 127 periodic terms given by Fairhead & Bretagnon.
 
 For the past and next centuries the TTmTDB correction has a maximum value of less than 2 ms so it is only required for high precision applications.
 
