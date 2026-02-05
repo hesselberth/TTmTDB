@@ -6,7 +6,7 @@ Created on Mon Dec 30 22:38:36 2024
 @author: Marcel Hesselberth
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.2"
 
 
 import numpy as np

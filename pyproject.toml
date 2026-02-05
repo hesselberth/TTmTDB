@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "TTmTDB"
-version = "1.0.0"
+version = "1.0.2"
 authors = [
   { name="Marcel Hesselberth", email="hessel@physics.leidenuniv.nl" },
 ]
@@ -27,6 +27,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/hesselberth/TTmTDB"
 Issues = "https://github.com/hesselberth/TTmTDB/issues"
+Inpop = "https://github.com/hesselberth/Inpop"
 
 [tool.hatch.build.targets.wheel]
 packages = ["ttmtdb"]
