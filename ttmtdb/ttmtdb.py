@@ -6,6 +6,9 @@ Created on Mon Dec 30 22:38:36 2024
 @author: Marcel Hesselberth
 """
 
+__version__ = "1.0.0"
+
+
 import numpy as np
 from .ttmtdbdata import data as dt
 from .cnumba import cnjit
